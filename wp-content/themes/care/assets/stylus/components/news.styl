@@ -1,0 +1,65 @@
+.news
+	padding 20px 0
+	&_header
+		color $black
+		margin-top 0
+		
+	&_list
+		display flex
+		justify-content space-between
+		flex-wrap wrap
+		
+	&_all
+		width 400px
+		padding 10px 0
+		border-radius 5px
+		background-color $green
+		border 1px solid $green
+		color white
+		margin 0 auto 20px
+		cursor pointer
+		font-size 1.3em
+		text-align center
+		
+		transition color 300ms ease-in-out, background-color 300ms ease-in-out
+		
+		&:hover
+			color $green
+			background-color $grey
+			
+		a
+			display block
+			width 100%
+			height 100%
+		
+.new
+	width 300px
+	margin-bottom 20px
+	cursor pointer
+	
+	&_image
+		border-radius 5px
+		overflow hidden
+	
+	&:after
+		content ''
+		display block
+		width 0px
+		margin 15px auto
+		height 5px
+		background-color $green
+		transition width 300ms ease-in-out
+	
+	&_header
+		color $green
+		margin 10px 0
+		transition color 300ms ease-in-out
+	
+	&_excerpt
+		color #666
+	
+	&:hover&:after
+		width 100%
+	
+	&:hover &_header
+		color $green

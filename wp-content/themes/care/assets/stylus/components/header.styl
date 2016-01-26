@@ -1,0 +1,136 @@
+.header
+	position fixed
+	right 0
+	left 0
+	top 0
+	height 150px
+	z-index 10
+	background-color white
+	box-shadow 0px 0.1em 0.4em rgba(74, 74, 74, 0.3)
+	transition height 500ms ease-in-out
+	
+	&--sticky
+		height 70px
+		
+	&--sticky &_logo
+		height 70px
+		width 70px
+	
+	&--sticky &_menu
+		margin-bottom 5px
+		
+	&--sticky &_info
+		margin-bottom 20px
+	
+	.container
+		display flex
+		height 100%
+		justify-content space-between
+		align-items flex-end
+	
+	&_logo
+		height 150px
+		width 150px
+		transition all .5s ease-in-out
+		img
+			height 100%
+			
+	&_icon
+		margin-left -80px
+		width 350px
+		img
+			width 100%
+	&_menu
+		display flex
+		transition margin .5s ease-in-out
+		justify-content center
+	
+	&_info
+		display flex
+		transition margin .5s ease-in-out
+		justify-content space-between
+		
+	&_phone
+		color darken($grey, 30%)
+		span:nth-child(2)
+			margin-left 5px
+			font-size 1.8em
+	
+	&_lang
+		display flex
+		
+		div
+			text-align center
+			margin-left 5px
+			border-radius 50%
+			width 40px
+			height 40px
+			font-size 14px
+			cursor pointer
+			&:first-child
+				background-color darken($green, 10%)
+				color white
+			span
+				padding 8px
+				display block
+
+.menu
+	color lighten($black, 15%)
+	
+	&_list, &_sub
+		list-style none
+		padding 0
+		margin 0
+		display flex
+		
+		a
+			padding 20px
+			display block
+			font-weight 400
+			font-size 1em
+			
+	&_list
+		justify-content center
+		
+		li
+			position relative
+			transition color 250ms ease-in-out
+			
+		& > li:hover
+			color darken($green, 10%)
+				
+	&_list li:hover &_sub
+		opacity 1
+		transform translateY(0px)
+		border-color $grey
+		background-color white
+		visibility visible
+
+	&_sub
+		visibility hidden
+		color darken($black, 15%)
+		background-color transparent
+		border-left 5px solid $grey
+		border-right 5px solid $grey
+		position absolute
+		flex-direction column
+		font-size .8em
+		width 220px
+		opacity 0
+		transform translateY(-10px)
+		transition transform 250ms, opacity 200ms, background-color 200ms, visibility 200ms
+		
+		li
+			transition background-color 200ms ease-in-out, color 200ms ease-in-out
+	
+			&:hover
+				background-color $grey
+				color darken($green, 10%)
+				
+.hands
+	text-align center
+	margin-top 150px
+	img 
+		width 60%
+		z-index -20
+		position relative

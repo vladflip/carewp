@@ -1,0 +1,48 @@
+.projects
+	background-color $grey
+	padding 50px 0
+	border-bottom 5px solid #d1d1d1
+	border-top 5px solid #d1d1d1
+	
+	.container
+		
+		display flex
+		flex-wrap wrap
+		flex 1 auto
+		justify-content space-around
+		
+	
+.project
+	width 420px
+	padding 10px
+	margin 0 30px
+	
+	&_container
+		cursor pointer
+		position relative
+		padding-bottom 10px
+		
+		&:after
+			content ''
+			position absolute
+			left 0
+			right 0
+			bottom -10px
+			height 0
+			background-color $green
+			transition height 300ms ease-in-out
+			
+		&:hover:after
+			height 5px
+	
+	&_header
+		font-size 1.4em
+		color $green
+		text-align center
+		
+	&_excerpt
+		color #1D1E18
+		margin-top 20px
+		text-align justify
+		line-height 20px
+		
