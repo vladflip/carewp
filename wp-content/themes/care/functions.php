@@ -11,7 +11,7 @@ add_action('init', 'include_scripts_and_styles');
 
 function include_scripts_and_styles(){
 
-	wp_enqueue_style('main-style', 
+	wp_register_style('main-style', 
 		THEME_URI.'/css/style.css' );
 
 	wp_register_script('stickyjs', THEME_URI . '/js/jquery.sticky.js', 

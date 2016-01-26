@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Care</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	<?php wp_enqueue_style('main-style'); ?>
 	<?php wp_head(); ?>
 </head>
 <body>
