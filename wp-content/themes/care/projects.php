@@ -1,44 +1,28 @@
+<?php
+	$args = array(
+		'post_type' => 'projects'
+	);
+
+	$projects = get_posts($args);
+?>	
 <div class="projects">
 	<div class="container">
-		<div class="project">
-			<div class="project_container">
-				<div class="project_header">
-					Координационный совет
+		<?php
+			foreach($projects as $project):
+				$link = get_permalink($project);
+		?>
+			<a href="<?=$link?>">
+				<div class="project">
+					<div class="project_container">
+						<div class="project_header">
+							<?= $project->post_title; ?>
+						</div>
+						<div class="project_excerpt">
+							<?= $project->post_excerpt; ?>
+						</div>
+					</div>
 				</div>
-				<div class="project_excerpt">
-					Координационный совет по вопросам развития интегрированных социально-медицинских услуг паллиативным пациентам, проживающим в городе Харькове
-				</div>
-			</div>
-		</div>
-		<div class="project">
-			<div class="project_container">
-				<div class="project_header">
-					Тренинговый центр по паллиативной и хосписной помощи
-				</div>
-				<div class="project_excerpt">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla dignissimos sequi praesentium! Pariatur, aut fugit?
-				</div>
-			</div>
-		</div>
-		<div class="project">
-			<div class="project_container">
-				<div class="project_header">
-					Мониторинг паллиативной помощи
-				</div>
-				<div class="project_excerpt">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla dignissimos sequi praesentium! Pariatur, aut fugit?
-				</div>
-			</div>
-		</div>
-		<div class="project">
-			<div class="project_container">
-				<div class="project_header">
-					Благотворительные акции
-				</div>
-				<div class="project_excerpt">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla dignissimos sequi praesentium! Pariatur, aut fugit?
-				</div>
-			</div>
-		</div>
+			</a>
+		<?php endforeach ?>
 	</div>
 </div>
