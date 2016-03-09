@@ -63,7 +63,8 @@
 			</div>
 		</div>
 	</div>
-	
-	<div class="hands">
-		<img src="<?=THEME_URI?>/img/hands.jpg" alt="">
-	</div>
+	<?php if(get_post_type() !== 'projects'): ?>
+		<div class="hands">
+			<img src="<?=THEME_URI?>/img/hands.jpg" alt="">
+		</div>
+	<?php endif; ?>

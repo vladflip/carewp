@@ -224,8 +224,6 @@ a {
 }
 .hands img {
   width: 60%;
-  z-index: -20;
-  position: relative;
 }
 .news {
   padding: 20px 0;
@@ -352,4 +350,15 @@ a {
   margin-top: 20px;
   text-align: justify;
   line-height: 20px;
+}
+.project_logo {
+  text-align: center;
+  margin-top: 150px;
+  background-color: #e4e4e4;
+  border-bottom: 5px solid #d1d1d1;
+}
+.project_logo img {
+  width: 40%;
+  display: block;
+  margin: auto;
 }

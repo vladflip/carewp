@@ -39,3 +39,9 @@ function register_custom_posts() {
 	);
 
 }
+
+function get_thumb_src($id) {
+
+	return wp_get_attachment_url( get_post_thumbnail_id($id) );
+
+}
