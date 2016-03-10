@@ -22,7 +22,7 @@
 
 		</div>
 		<div class="news_all">
-			<a href="">Посмотреть все новости</a>
+			<a href="news">Посмотреть все новости</a>
 		</div>
 	</div>
 </div>
