@@ -190,18 +190,13 @@ a {
 }
 .menu_list li:hover .menu_sub {
   opacity: 1;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  border-color: #e4e4e4;
-  background-color: #fff;
   visibility: visible;
 }
 .menu_sub {
+  z-index: -20;
   visibility: hidden;
   color: #191a14;
-  background-color: transparent;
-  border-left: 5px solid #e4e4e4;
-  border-right: 5px solid #e4e4e4;
+  background-color: #fff;
   position: absolute;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
@@ -209,13 +204,11 @@ a {
   font-size: 0.8em;
   width: 220px;
   opacity: 0;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-  transition: -webkit-transform 250ms, opacity 200ms, background-color 200ms, visibility 200ms;
-  transition: transform 250ms, opacity 200ms, background-color 200ms, visibility 200ms;
+  transition: opacity 200ms, visibility 200ms;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.15);
 }
 .menu_sub li {
-  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .menu_sub li:hover {
   background-color: #e4e4e4;
