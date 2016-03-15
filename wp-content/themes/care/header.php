@@ -1,3 +1,12 @@
+<?php
+	$args = array(
+		'theme_location' => 'header_menu',
+		'container' => false,
+		'menu_id' => '',
+		'menu_class' => 'menu_list'
+	);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +42,9 @@
 				</div>
 				<div class="header_menu">
 					<div class="menu">
-						<ul class="menu_list">
+						<?php wp_nav_menu($args); ?>
+
+						<!-- <ul class="menu_list">
 							<li>
 								<a href="">О нас</a>
 							</li>
@@ -57,7 +68,7 @@
 							<li>
 								<a href="">Полезная информация</a>
 							</li>
-						</ul>
+						</ul> -->
 					</div>
 				</div>
 			</div>

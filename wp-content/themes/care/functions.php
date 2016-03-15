@@ -5,10 +5,12 @@ define('THEME_URI', get_template_directory_uri());
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'menus' );
 
+add_filter('wp_nav_menu','change_submenu_class');
 add_filter('show_admin_bar', '__return_false');
 
 add_action('init', 'include_scripts_and_styles');
 add_action('init', 'register_custom_posts');
+add_action('init', 'registerMenu');
 
 function include_scripts_and_styles(){
 
@@ -45,3 +47,13 @@ function get_thumb_src($id) {
 	return wp_get_attachment_url( get_post_thumbnail_id($id) );
 
 }
+
+function registerMenu() {
+	$args = array('header_menu' => __('Главное меню'));
+	register_nav_menus($args);
+}
+
+function change_submenu_class($menu) {  
+	$menu = preg_replace('/ class="sub-menu"/','/ class="menu_sub" /',$menu);  
+	return $menu;  
+} 

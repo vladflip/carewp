@@ -70,6 +70,9 @@ a {
   box-shadow: 0px 0.1em 0.4em rgba(74,74,74,0.3);
   transition: height 500ms ease-in-out;
 }
+.header_right {
+  min-width: 770px;
+}
 .header--sticky {
   height: 70px;
 }
@@ -115,9 +118,9 @@ a {
   display: -ms-flexbox;
   display: flex;
   transition: margin 0.5s ease-in-out;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .header_info {
   display: -webkit-flex;
@@ -185,7 +188,9 @@ a {
   position: relative;
   transition: color 250ms ease-in-out;
 }
-.menu_list > li:hover {
+.menu_list > li:hover,
+.menu_list > li.current-menu-item,
+.menu_list > li.current-menu-parent {
   color: #2ba03e;
 }
 .menu_list li:hover .menu_sub {
