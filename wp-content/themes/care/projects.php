@@ -12,12 +12,12 @@
 				$link = get_permalink($project);
 		?>
 			<a href="<?=$link?>">
-				<div class="project">
-					<div class="project_container">
-						<div class="project_header">
+				<div class="projects_item">
+					<div class="projects_container">
+						<div class="projects_header">
 							<?= $project->post_title; ?>
 						</div>
-						<div class="project_excerpt">
+						<div class="projects_excerpt">
 							<?= $project->post_excerpt; ?>
 						</div>
 					</div>

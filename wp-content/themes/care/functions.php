@@ -57,3 +57,12 @@ function change_submenu_class($menu) {
 	$menu = preg_replace('/ class="sub-menu"/','/ class="menu_sub" /',$menu);  
 	return $menu;  
 } 
+
+function my_connection_types() {
+    p2p_register_connection_type( array(
+        'name' => 'posts_to_projects',
+        'from' => 'post',
+        'to' => 'projects'
+    ) );
+}
+add_action( 'p2p_init', 'my_connection_types' );
