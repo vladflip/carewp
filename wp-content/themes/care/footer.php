@@ -1,3 +1,5 @@
+<!-- TEST FOR HOSTINGER -->
+
 	<div class="footer">
 		<div class="container">
 			<div class="footer_logo">
