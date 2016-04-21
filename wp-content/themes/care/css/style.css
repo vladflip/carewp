@@ -301,6 +301,11 @@ a {
 .new:hover .new_header {
   color: #30b245;
 }
+.page_title {
+  font-size: 1.5em;
+  color: #30b245;
+  margin: 10px 0;
+}
 .posts {
   border-top: 5px solid #d1d1d1;
 }
