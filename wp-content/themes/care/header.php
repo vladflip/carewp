@@ -34,11 +34,9 @@
 						<span>+380 (44)</span>
 						<span>371-45-80</span>
 					</div>
-					<div class="header_lang">
-						<div><span>рус</span></div>
-						<div><span>укр</span></div>
-						<div><span>eng</span></div>
-					</div>
+					<ul class="header_lang">
+						<?php pll_the_languages(); ?>
+					</ul>
 				</div>
 				<div class="header_menu">
 					<div class="menu">

@@ -61,8 +61,11 @@
 	
 	&_lang
 		display flex
+		list-style none
+		padding 0
+		margin 0
 		
-		div
+		li
 			text-align center
 			margin-left 5px
 			border-radius 50%
@@ -70,10 +73,11 @@
 			height 40px
 			font-size 14px
 			cursor pointer
-			&:first-child
+			
+			&.current-lang
 				background-color darken($green, 10%)
 				color white
-			span
+			a
 				padding 8px
 				display block
 
