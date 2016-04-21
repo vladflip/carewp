@@ -31,7 +31,9 @@
 		</div>
 
 		<div class="news_all">
-			<a href="news">Посмотреть все новости</a>
+			<a href="<?= get_permalink(get_page_by_path('news')) ?>">
+				Посмотреть все новости
+			</a>
 		</div>
 
 	</div>
