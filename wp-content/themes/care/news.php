@@ -1,16 +1,25 @@
 <?php
 	$args = [
-		'posts_per_page' => 6
+		'posts_per_page' => 6,
+		'lang' => 'ru'
 	];
 
 	$posts = get_posts($args);
+
+	if(function_exists('pll_current_language'))
+		$lang = pll_current_language();
+	else
+		$lang = 'ru';
+
+	global $_OURCARE_LANG;
+
 ?>
 
 <div class="news">
 	<div class="container">
 
 		<h2 class="news_header">
-			Последние новости
+			<?= $_OURCARE_LANG[$lang]['news_latest']; ?>
 		</h2>
 
 		<div class="news_list">
@@ -32,9 +41,8 @@
 
 		<div class="news_all">
 			<a href="<?= get_permalink(get_page_by_path('news')) ?>">
-				Посмотреть все новости
+				<?= $_OURCARE_LANG[$lang]['news_all']; ?>
 			</a>
 		</div>
-
 	</div>
 </div>

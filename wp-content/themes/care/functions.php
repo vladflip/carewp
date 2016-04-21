@@ -66,3 +66,13 @@ function my_connection_types() {
     ) );
 }
 add_action( 'p2p_init', 'my_connection_types' );
+
+// GET LANG ARRAYS
+
+global $_OURCARE_LANG;
+
+$_OURCARE_LANG = [
+	'ru' => include 'lang/ru.php',
+	'en' => include 'lang/en.php',
+	'ua' => include 'lang/ua.php',
+];

@@ -1,6 +1,7 @@
 <?php
 	$args = array(
-		'post_type' => 'projects'
+		'post_type' => 'projects',
+		'lang' => 'ru'
 	);
 
 	$projects = get_posts($args);

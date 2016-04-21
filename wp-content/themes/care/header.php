@@ -35,7 +35,10 @@
 						<span>371-45-80</span>
 					</div>
 					<ul class="header_lang">
-						<?php pll_the_languages(); ?>
+						<?php 
+							if(function_exists('pll_the_languages'))
+								pll_the_languages(); 
+						?>
 					</ul>
 				</div>
 				<div class="header_menu">
