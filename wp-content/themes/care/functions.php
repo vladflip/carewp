@@ -36,7 +36,8 @@ function register_custom_posts() {
 			'menu_position' => 15,
 			'menu_icon' => 'dashicons-media-spreadsheet',
 			'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt', 'post-formats'),
-			'taxonomies' => array('category')
+			'taxonomies' => array('category'),
+			'show_in_nav_menus' => TRUE
 		)
 	);
 
