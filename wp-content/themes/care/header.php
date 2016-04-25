@@ -27,8 +27,13 @@
 			</div>
 			<div class="header_right">
 				<div class="header_info">
-					<div class="header_icon">
-						<img src="<?=THEME_URI?>/img/iconname.jpg" alt="">
+					<div class="header_title">
+						<div class="header_icon">
+							<img src="<?=THEME_URI?>/img/iconname.jpg" alt="">
+						</div>
+						<div class="header_quote">
+							ОО "Iнститут правових дослiджень та стратегiй"
+						</div>
 					</div>
 					<div class="header_phone">
 						<span>+380 (44)</span>

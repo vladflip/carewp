@@ -106,12 +106,32 @@ a {
 .header_logo img {
   height: 100%;
 }
+.header_info {
+  height: 80px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  transition: margin 0.5s ease-in-out;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
 .header_icon {
-  margin-left: -80px;
   width: 350px;
 }
 .header_icon img {
   width: 100%;
+}
+.header_title {
+  margin: 0 0 0 -40px;
+}
+.header_quote {
+  margin-left: 5px;
+  font-size: 0.9em;
+  color: #4e5141;
 }
 .header_menu {
   display: -webkit-flex;
@@ -121,15 +141,6 @@ a {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-}
-.header_info {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  transition: margin 0.5s ease-in-out;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .header_phone {
   color: #a0a0a0;

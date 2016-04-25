@@ -38,20 +38,30 @@
 		img
 			height 100%
 			
+	&_info
+		height 80px
+		display flex
+		transition margin .5s ease-in-out
+		justify-content space-between
+		align-items flex-end
+			
 	&_icon
-		margin-left -80px
 		width 350px
 		img
 			width 100%
+			
+	&_title
+		margin 0 0 0 -40px
+		
+	&_quote
+		margin-left 5px
+		font-size .9em
+		color lighten($black, 20%)
+
 	&_menu
 		display flex
 		transition margin .5s ease-in-out
 		justify-content flex-end
-	
-	&_info
-		display flex
-		transition margin .5s ease-in-out
-		justify-content space-between
 		
 	&_phone
 		color darken($grey, 30%)
