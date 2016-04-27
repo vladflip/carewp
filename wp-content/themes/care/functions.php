@@ -72,9 +72,11 @@ add_action( 'p2p_init', 'my_connection_types' );
 
 global $_OURCARE_LANG;
 
-if(function_exists('pll_current_language'))
-	$lang = pll_current_language();
-else
+if( ! is_admin()){
 	$lang = 'ru';
 
-$_OURCARE_LANG = include "lang/$lang.php";
+	if(function_exists('pll_current_language'))
+		$lang = pll_current_language();
+
+	$_OURCARE_LANG = include "lang/$lang.php";
+}
