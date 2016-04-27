@@ -12,6 +12,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Care</title>
+	<link rel="icon" type="image/png" href="<?=THEME_URI?>/favicon.png">
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
 	<?php wp_enqueue_style('main-style'); ?>
 	<?php wp_head(); ?>
