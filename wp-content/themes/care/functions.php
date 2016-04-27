@@ -74,14 +74,14 @@ global $_OURCARE_LANG;
 
 if( ! is_admin()){
 
-	// $lang = 'ru';
+	$lang = 'ru';
 
-	// if(function_exists('pll_current_language'))
-	// 	$lang = pll_current_language();
+	if(function_exists('pll_current_language'))
+		$lang = pll_current_language();
 
-	// if(isset($lang))
-	// 	if($lang == '')
-	// 		$lang = 'ru';
+	if(isset($lang))
+		if($lang == '')
+			$lang = 'ru';
 
-	$_OURCARE_LANG = include "lang/ru.php";
+	$_OURCARE_LANG = include "lang/$lang.php";
 }
