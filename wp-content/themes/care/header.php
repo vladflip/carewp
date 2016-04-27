@@ -13,6 +13,9 @@
 	<meta charset="UTF-8">
 	<title><?=get_bloginfo('name')?></title>
 	<link rel="icon" type="image/png" href="<?=THEME_URI?>/favicon.png">
+	<meta name="Description" content="благотворительная организация">
+	<meta name="author" content="vladflip">
+	<meta name="Keywords" content="благотворительная организация, наша турбота">
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
 	<?php wp_enqueue_style('main-style'); ?>
 	<?php wp_head(); ?>
