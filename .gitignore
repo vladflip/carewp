@@ -6,5 +6,6 @@
 /wp-content/themes/care/node_modules
 /wp-content/themes/care/img/demo/*
 .env
+.htaccess
 
 *.sublime-*
