@@ -37,12 +37,16 @@ a {
   margin-bottom: 15px;
   border-bottom: 1px solid #c2c2c2;
 }
+.footer_contacts {
+  text-align: right;
+}
 .footer_header {
   color: #a0a0a0;
   font-weight: 400;
   font-size: 1.5em;
 }
-.footer_phone {
+.footer_phone,
+.footer_developer {
   margin-top: 10px;
   text-align: right;
   color: #4ccf61;
@@ -55,7 +59,8 @@ a {
 .footer_image img {
   width: 320px;
 }
-.footer_mail {
+.footer_mail,
+.footer_span {
   font-size: 0.9em;
   color: #b6b6b6;
 }

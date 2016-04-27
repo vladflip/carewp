@@ -18,6 +18,9 @@
 				<div class="footer_header">Контакты</div>
 				<div class="footer_phone">093 444 32 12</div>
 				<div class="footer_mail">carenation@mail.ru</div>
+				<div class="footer_developer">
+					<span class="footer_span">developer: </span><a href="https://vk.com/vladflip" target="_blank">vladflip</a>
+				</div>
 			</div>
 		</div>
 	</div>
