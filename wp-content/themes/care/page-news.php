@@ -4,7 +4,8 @@ Template Name: News Page
 */
 
 	$args = [
-		'posts_per_page' => 0
+		'posts_per_page' => 0,
+		'lang' => 'ru'
 	];
 
 	$posts = get_posts($args);
