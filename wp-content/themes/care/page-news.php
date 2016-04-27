@@ -1,4 +1,8 @@
 <?php
+/*
+Template Name: News Page
+*/
+
 	$args = [
 		'posts_per_page' => 0
 	];
