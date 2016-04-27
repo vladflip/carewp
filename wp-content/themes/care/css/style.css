@@ -312,6 +312,9 @@ a {
 .new:hover .new_header {
   color: #30b245;
 }
+.page {
+  min-height: 250px;
+}
 .page_title {
   font-size: 1.5em;
   color: #30b245;
