@@ -72,8 +72,9 @@ add_action( 'p2p_init', 'my_connection_types' );
 
 global $_OURCARE_LANG;
 
-$_OURCARE_LANG = [
-	'ru' => include 'lang/ru.php',
-	'en' => include 'lang/en.php',
-	'ua' => include 'lang/ua.php',
-];
+if(function_exists('pll_current_language'))
+	$lang = pll_current_language();
+else
+	$lang = 'ru';
+
+$_OURCARE_LANG = include "lang/$lang.php";

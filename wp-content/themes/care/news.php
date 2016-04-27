@@ -6,11 +6,6 @@
 
 	$posts = get_posts($args);
 
-	if(function_exists('pll_current_language'))
-		$lang = pll_current_language();
-	else
-		$lang = 'ru';
-
 	global $_OURCARE_LANG;
 
 ?>
@@ -19,7 +14,7 @@
 	<div class="container">
 
 		<h2 class="news_header">
-			<?= $_OURCARE_LANG[$lang]['news_latest']; ?>
+			<?= $_OURCARE_LANG['news_latest']; ?>
 		</h2>
 
 		<div class="news_list">
@@ -41,7 +36,7 @@
 
 		<div class="news_all">
 			<a href="<?= get_permalink(get_page_by_path('news')) ?>">
-				<?= $_OURCARE_LANG[$lang]['news_all']; ?>
+				<?= $_OURCARE_LANG['news_all']; ?>
 			</a>
 		</div>
 	</div>
