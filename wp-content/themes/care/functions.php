@@ -68,11 +68,20 @@ function my_connection_types() {
 }
 add_action( 'p2p_init', 'my_connection_types' );
 
-// GET LANG ARRAYS
-
 global $_OURCARE_LANG;
 
+global $_OURCARE_OPTIONS;
+
+$_OURCARE_OPTIONS = [
+	'code' => '+380 (44)',
+	'phone' => '456-45-54',
+	'mail' => 'sample@mail.sample',
+	'address' => 'Адрес'
+];
+
 if( ! is_admin()){
+
+	// GET LANG ARRAYS
 
 	$lang = 'ru';
 
@@ -84,4 +93,11 @@ if( ! is_admin()){
 			$lang = 'ru';
 
 	$_OURCARE_LANG = include "lang/$lang.php";
+
+	if(function_exists('get_custom')){
+		$_OURCARE_OPTIONS['code'] = substr(get_custom('phone'), 0, 9);
+		$_OURCARE_OPTIONS['phone'] = substr(get_custom('phone'), 9);
+		$_OURCARE_OPTIONS['mail'] = get_custom('mail');
+		$_OURCARE_OPTIONS['address'] = get_custom('address');
+	}
 }

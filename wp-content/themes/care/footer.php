@@ -1,4 +1,6 @@
-<!-- TEST FOR HOSTINGER -->
+<?php
+	global $_OURCARE_OPTIONS;
+?>
 
 	<div class="footer">
 		<div class="container">
@@ -16,8 +18,9 @@
 			</div> -->
 			<div class="footer_contacts">
 				<div class="footer_header">Контакты</div>
-				<div class="footer_phone">093 444 32 12</div>
-				<div class="footer_mail">carenation@mail.ru</div>
+				<div class="footer_phone"><?= $_OURCARE_OPTIONS['phone'] ?></div>
+				<div class="footer_mail"><?= $_OURCARE_OPTIONS['mail'] ?></div>
+				<div class="footer_mail"><?= $_OURCARE_OPTIONS['address'] ?></div>
 				<div class="footer_developer">
 					<span class="footer_span">developer: </span><a href="https://vk.com/vladflip" target="_blank">vladflip</a>
 				</div>

@@ -5,6 +5,8 @@
 		'menu_id' => '',
 		'menu_class' => 'menu_list'
 	);
+
+	global $_OURCARE_OPTIONS;
 ?>
 
 <!DOCTYPE html>
@@ -40,8 +42,8 @@
 						</div>
 					</div>
 					<div class="header_phone">
-						<span>+380 (44)</span>
-						<span>371-45-80</span>
+						<span><?= $_OURCARE_OPTIONS['code'] ?></span>
+						<span><?= $_OURCARE_OPTIONS['phone'] ?></span>
 					</div>
 					<ul class="header_lang">
 						<?php 
