@@ -76,7 +76,7 @@ a {
   transition: height 500ms ease-in-out;
 }
 .header_right {
-  min-width: 770px;
+  width: 850px;
 }
 .header--sticky {
   height: 70px;
@@ -129,9 +129,6 @@ a {
 }
 .header_icon img {
   width: 100%;
-}
-.header_title {
-  margin: 0 0 0 -40px;
 }
 .header_quote {
   margin-left: 5px;
