@@ -42,8 +42,8 @@
 						</div>
 					</div>
 					<div class="header_phone">
-						<span><?= $_OURCARE_OPTIONS['code'] ?></span>
-						<span><?= $_OURCARE_OPTIONS['phone'] ?></span>
+						<span><?= $_OURCARE_OPTIONS['phone_code'] ?></span>
+						<span><?= $_OURCARE_OPTIONS['phone_number'] ?></span>
 					</div>
 					<ul class="header_lang">
 						<?php 

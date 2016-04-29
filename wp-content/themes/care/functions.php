@@ -73,8 +73,9 @@ global $_OURCARE_LANG;
 global $_OURCARE_OPTIONS;
 
 $_OURCARE_OPTIONS = [
-	'code' => '+380 (44)',
-	'phone' => '456-45-54',
+	'phone_code' => '+380 (44)',
+	'phone_number' => '234-34-34',
+	'phone' => '+380 (44) 456-45-54',
 	'mail' => 'sample@mail.sample',
 	'address' => 'Адрес'
 ];
@@ -95,8 +96,9 @@ if( ! is_admin()){
 	$_OURCARE_LANG = include "lang/$lang.php";
 
 	if(function_exists('get_custom')){
-		$_OURCARE_OPTIONS['code'] = substr(get_custom('phone'), 0, 9);
-		$_OURCARE_OPTIONS['phone'] = substr(get_custom('phone'), 9);
+		$_OURCARE_OPTIONS['phone_code'] = substr(get_custom('phone'), 0, 9);
+		$_OURCARE_OPTIONS['phone_number'] = substr(get_custom('phone'), 9);
+		$_OURCARE_OPTIONS['phone'] = get_custom('phone');
 		$_OURCARE_OPTIONS['mail'] = get_custom('mail');
 		$_OURCARE_OPTIONS['address'] = get_custom('address');
 	}
