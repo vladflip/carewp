@@ -8,6 +8,14 @@
 
 	global $_OURCARE_LANG;
 
+	// get news all link by current language
+	
+	if(function_exists('pll_get_post')){
+		$id = pll_get_post(get_page_by_path('news')->ID);
+	} else {
+		$id = get_page_by_path('news');
+	}
+
 ?>
 
 <div class="news">
@@ -35,7 +43,7 @@
 		</div>
 
 		<div class="news_all">
-			<a href="<?= get_permalink(get_page_by_path('news')) ?>">
+			<a href="<?= get_permalink($id) ?>">
 				<?= $_OURCARE_LANG['news_all']; ?>
 			</a>
 		</div>
